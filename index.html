@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pop Quiz</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<style>
+  body {
+		width: 90%;
+		margin: 14px auto;
+		font-size: 18px;
+		font-family: 'Raleway', sans-serif;
+		}
+	ul {margin: 0; padding: 0;}
+	ul li {list-style-type: none; margin: 0; padding: 3px 10px; border-bottom: 1px solid #ddd;}
+	ul li:nth-child(odd) {background-color: #ddf; border-bottom: 1px solid #888;}
+	ul li:hover {background-color: #99f; color: #ddd;}
+	ul li em {display: inline-block; margin: 0 0 0 15px;}
+	</style>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+	<h1>Publishing Dates:</h1>
+
+	<div id="popquiz">Initial Text</div>
+
+	<script>
+		$( "#popquiz" ).load( "json.test.php #result" );
+	</script>
+
+</body>
+</html>
